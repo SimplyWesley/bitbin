@@ -1,0 +1,116 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containers {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.containers > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.title {
+  font-family: "Pacifico";
+  font-weight: norma;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.4;
+  color: $bitbinblue;
+}
+
+.dropdown {
+  p {
+    text-decoration: none;
+  }
+  [data-toggle="dropdown"] {
+    position: relative;
+    display: block;
+    color: white;
+    background: $bitbinblue;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    &:hover {
+      background: $bitbinblue;
+    }
+  }
+  .icon-arrow {
+    position: absolute;
+    display: block;
+    font-size: 0.7em;
+    color: #fff;
+    top: 14px;
+    right: 10px;
+    &::before {
+      content: "\25BC";
+    }
+  }
+  .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #eee;
+    li {
+      padding: 0;
+      p {
+        display: block;
+        color: #6f6f6f;
+        background: #eee;
+        padding: 10px 10px;
+      }
+      a {
+        color: $bitbinblue;
+      }
+    }
+  }
+  .show {
+    display: block;
+    max-height: 9999px;
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .containers {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .dropdown [data-toggle="dropdown"] {
+    padding: 5px;
+  }
+  .dropdown .icon-arrow {
+    top: 8px;
+    right: 5px;
+  }
+  .dropdown .dropdown-menu li a {
+    padding: 5px 10px;
+  }
+}

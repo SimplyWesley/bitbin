@@ -1,0 +1,38 @@
+#snippets {
+  background-color: #282c34;
+  color: white;
+  h1 {
+    margin: 15px;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#copyButton,
+#downloadButton,
+#copyCodeButton {
+  background-color: #274d92;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.password {
+  margin-top: 10px;
+  margin-left: 5px;
+
+  input {
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 16px;
+    appearance: none;
+  }
+}
