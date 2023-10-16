@@ -6,8 +6,8 @@
         <span class="toggle">☰</span>
     </div>
     <ul class="list-item">
-        <li><a href="./languages.php">Supported languages</a></li>
-        <li><a href="./faq.php">FAQ</a></li>
-        <li><a class="addsnippet" href="./addsnippet.php"> <i class="fa-solid fa-square-plus"></i> New snippet</a></li>
+        <li><a href="../webpages/languages.php">Supported languages</a></li>
+        <li><a href="../webpages/faq.php">FAQ</a></li>
+        <li><a class="addsnippet" href="../webpages/addsnippet.php"> <i class="fa-solid fa-square-plus"></i> New snippet</a></li>
     </ul>
 </nav>
