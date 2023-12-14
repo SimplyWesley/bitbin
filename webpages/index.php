@@ -136,7 +136,7 @@
                             <div class="first">
                                 <a><?php if ($snippet['password'] != null) {
                                         echo "<i class='fa-solid fa-lock'></i>&nbsp;";
-                                    } ?></a><a href="./snippet.php?id=<?= $snippet['snippet_id'] ?>"><?= $snippet['title'] ?></a>
+                                    } ?></a><a href="./webpages/snippet.php?id=<?= $snippet['snippet_id'] ?>"><?= $snippet['title'] ?></a>
                                 <?php
                                 switch ($snippet['language']) {
                                     default:
