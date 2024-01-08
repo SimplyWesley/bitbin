@@ -28,10 +28,12 @@ if (!$snippet) {
     exit();
 }
 
-if ((!isset($_SESSION['checked']) && $snippet['password'] != null)) {
-    $_SESSION['checked'] = "false";
-} else {
+if (!isset($_SESSION['checked']) && !$snippet['password']) {
     $_SESSION['checked'] = "true";
+} else if ((!isset($_SESSION['checked']) && $snippet['password'] != null)) {
+    $_SESSION['checked'] = "false";
+} else if (isset($_SESSION['checked']) && $_SESSION['checked'] != "true" && $snippet['password'] != null) {
+    $_SESSION['checked'] = "false";
 }
 
 ?>
